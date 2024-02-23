@@ -20,7 +20,7 @@ os.environ["LANGCHAIN_PROJECT"] = "AI CV Review"
 
 llm = ChatOpenAI(model="gpt-3.5-turbo-0125", streaming=True)
 
-dir_path = "/mnt/c/Users/leung/Documents/"
+dir_path = ""
 
 @tool("ask_candidate", return_direct=False)
 def ask_candidate(query: str) -> str:
